@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avam's Page</title>
+  <style>
+    :root {
+      --background: #f7f8fc;
+      --surface: #ffffff;
+      --text: #1f2937;
+      --muted: #4b5563;
+      --accent: #2563eb;
+      --radius: 22px;
+      --shadow: 0 24px 80px rgba(15, 23, 42, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, sans-serif;
+      background: radial-gradient(circle at top, #e9efff 0%, transparent 35%),
+                  linear-gradient(180deg, #f8fafc 0%, #e5e7eb 100%);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    .page {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    header {
+      padding: 36px 24px;
+      background: var(--surface);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      margin-bottom: 28px;
+    }
+
+    header h1 {
+      margin: 0 0 10px;
+      font-size: clamp(2.5rem, 3.5vw, 3.75rem);
+      line-height: 1.05;
+    }
+
+    header p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.05rem;
+      max-width: 720px;
+      line-height: 1.8;
+    }
+
+    .section {
+      background: var(--surface);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 28px;
+      margin-bottom: 24px;
+    }
+
+    .section h2 {
+      margin-top: 0;
+      font-size: 1.65rem;
+      color: #111827;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      align-items: start;
+      margin-top: 20px;
+    }
+
+    figure {
+      margin: 0;
+      background: #f9fafb;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 18px 60px rgba(15, 23, 42, 0.08);
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    figcaption {
+      padding: 16px;
+      font-size: 0.96rem;
+      color: var(--muted);
+    }
+
+    .highlight {
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .bio {
+      line-height: 1.75;
+      color: var(--muted);
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        padding: 16px;
+      }
+
+      header {
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <p class="highlight">Hello! I'm Avam.</p>
+      <h1>Welcome to my webpage</h1>
+      <p class="bio">I love reading stories and sharing moments from my life. I have finished the complete set of Tom Gates books, and I enjoy capturing memories with family, friends, and my dog.</p>
+    </header>
+
+    <section class="section">
+      <h2>My time when I went to Sydney</h2>
+      <p class="bio">This is a little corner of my world where I relax, read, and spend time with my dog. I like making this page warm and bright for anyone who visits.</p>
+      <figure>
+        <img src="images/20251031_155111.jpg" alt="Avam's home exterior" loading="lazy">
+        <figcaption>This is a photo when I recently travelled to sydney.</figcaption>
+      </figure>
+    </section>
+
+    <section class="section">
+      <h2>My dog</h2>
+      <p class="bio">Here are a few photos of my dog. They are playful, curious, and always ready for a walk.</p>
+      <div class="gallery">
+        <figure>
+          <img src="images/20260312_171127.jpg" alt="Avam's dog sitting outside" loading="lazy">
+          <figcaption>My dog enjoying a sunny day outdoors.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/20260410_095045.jpg" alt="Avam's dog posing" loading="lazy">
+          <figcaption>A cheerful moment with my dog.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Pizza & Paneer Tikka time</h2>
+      <p class="bio">I love eating pizza & Paneer Tikka, especially when I share a tasty slice with family. Pizza is one of my favorite foods and always makes the day feel special.</p>
+      <div class="gallery">
+        <figure>
+          <img src="images/20260517_104529.jpg" alt="A delicious pizza" loading="lazy">
+          <figcaption>Pizza is one of my favorite meals.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/20260517_104543.jpg" alt="Paneer tikka pizza" loading="lazy">
+          <figcaption>Paneer tikka — a savory favorite.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>My Lego set</h2>
+      <p class="bio">This is one of my favorite Lego set pictures, and I wanted to show it in its own section.</p>
+      <figure>
+        <img src="images/20250925_130557.jpg" alt="Lego set photo" loading="lazy">
+        <figcaption>A fun Lego set I like to build.</figcaption>
+      </figure>
+         <figure>
+          <img src="images/20250925_130517.jpg" alt="Additional photo 3" loading="lazy">
+          <figcaption>A third photo to remember.</figcaption>
+        </figure>
+    </section>
+
+    <section class="section">
+      <h2>cake time!</h2>
+      <p class="bio">Here are three more photos I wanted to share.</p>
+      <div class="gallery">
+        <figure>
+          <img src="images/20250920_185159.jpg" alt="Additional photo 1" loading="lazy">
+          <figcaption>One more favorite photo.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/20250920_185204.jpg" alt="Additional photo 2" loading="lazy">
+          <figcaption>Another special memory.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Famous places in Sydney</h2>
+      <p class="bio">Here are the two newest photos added to the page.</p>
+      <div class="gallery">
+        <figure>
+          <img src="images/20251031_140538.jpg" alt="New photo 1" loading="lazy">
+          <figcaption>A lovely new memory.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/20251031_144306.jpg" alt="New photo 2" loading="lazy">
+          <figcaption>Another happy moment.</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
